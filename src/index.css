@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+    background-image: url(https://img.freepik.com/foto-gratis/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28312.jpg?w=900&t=st=1665791364~exp=1665791964~hmac=009fe8656d8c3a91cdf83fb9def105c0dcbdd14b2218a43e20ce6a2c7dd20aa2);
+    margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,54 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.banner{
+  background-image: url(https://orders.pizzadelight.com/assets/img/pizzadelight/banner_992.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 80px;
+  margin-bottom: 20px;
+}
+nav{
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer, a{
+  background-color: black;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.card{
+  width: 300px;
+  border: solid gray 2px;
+}
+.addtocar{
+  margin-left: 5px;
+}
+ul{
+  margin-left: 10px;
+}
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  justify-content: space-around;
+}
+.cardetalle img{
+  height: 100%;
+}
+.cardetalle{
+  margin-top: 20px;
+  border: solid gray 2px;
 }

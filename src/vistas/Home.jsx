@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
     <Banner/>
+    <div className='container'>
     {product.map((item) =>(
     <Card
     key={item.id}
@@ -21,7 +22,9 @@ export default function Home() {
     name={item.name}
     price={item.price}
     />
+    
   ))}
+  </div>
     </>
   );
 }

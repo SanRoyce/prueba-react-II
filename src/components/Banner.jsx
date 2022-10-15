@@ -2,7 +2,10 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div>imagen con fondo de pizza y descripcion</div>
+    <div className='banner text-white'>
+      <h2>¡Pizzería Mamma Mia!</h2>
+      <p>¡Tenemos las mejores pizzas que podrás encontrar!</p>
+    </div>
   )
 }
 

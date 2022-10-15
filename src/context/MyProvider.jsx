@@ -10,12 +10,10 @@ const MyContextProvider = ({ children }) => {
         axios
         .get(baseURL)
         .then((response) => {
-            console.log(response.data);
             SetProduct(response.data);
         })
         .catch((err) => console.log(err));
     },[]);
- console.log(product);
  
 
  return(

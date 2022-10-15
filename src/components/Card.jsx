@@ -13,18 +13,33 @@ function Card({ desc, id, img, ingredients, name, price }) {
   };
 
   return (
-    <div key={id}>
-      <img src={img} alt="imagen de pizza" />
-      <p>{desc}</p>
-      <ul>
-        {ingredients.map((ingredient, i) => (
-          <li key={i}>{ingredient}</li>
-        ))}
-      </ul>
-      <p>{name}</p>
-      <p>{price}</p>
-      <button onClick={() => navigate(`/pizzas/${id}`)}>Ver Más</button>
-    </div>
+    <>
+    
+      <div key={id} className="card">
+        <img className="card-img-top" src={img} alt="Card image cap" />
+        <div className="card-body">
+          <h3 className="card-title text-center"><strong>👨‍🍳 {name}</strong></h3>
+        </div>
+        <ul className="list-group list-group-flush">
+          <h4>Ingredientes:</h4>
+          <th>
+            {ingredients.map((ingredient, i) => (
+              <tr key={i}>🍕 {ingredient}</tr>
+            ))}
+          </th>
+          <li className="list-group-item text-danger">
+            {" "}
+           <h4> <strong>${price}</strong></h4>
+          </li>
+        </ul>
+        <div className="card-body d-flex justify-content-center">
+          <button className="btn btn-danger" onClick={() => navigate(`/pizza/${id}`)}>Ver Más</button>
+          <button className="addtocar btn btn-outline-danger">Add to car</button>
+        </div>
+      </div>
+      
+
+    </>
   );
 }
 

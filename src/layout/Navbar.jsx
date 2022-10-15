@@ -3,18 +3,15 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const setActiveClass = ({ isActive }) => (isActive ? "active" : undefined);
   return (
-    <nav className="navbar bg-dark justify-content-between">
-      <form className="form-inline mx-3 my-2">
+    <nav>
+      <form>
         <NavLink className={setActiveClass} end to="/">
-          Home
+          🍕 Pizzería Mamma Mia!
         </NavLink>
-        {" - "}
-        <NavLink className={setActiveClass} end to="/Pizza">
-          Pizza
-        </NavLink>
-        {" - "}
-        <NavLink className={setActiveClass} end to="/Carro">
-          Carro
+        </form>
+        <form>
+        <NavLink className={setActiveClass} end to="/carro">
+         🛒
         </NavLink>
       </form>
     </nav>

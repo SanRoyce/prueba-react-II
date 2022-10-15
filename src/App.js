@@ -5,8 +5,9 @@ import Navbar from "./layout/Navbar";
 import Home from "./vistas/Home";
 import DetallePizza from "./vistas/DetallePizza";
 import CarritoCompra from "./vistas/CarritoCompra";
-/* import MyContext from "./context/MyContext";
- */
+import Footer from "./layout/Footer";
+
+ 
 export default function App() {
   return (
     <div className="App">
@@ -14,9 +15,10 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Pizza/:id" element={<DetallePizza />} />
-          <Route path="/Carro" element={<CarritoCompra />} />
+          <Route path="/pizza/:id" element={<DetallePizza/>} />
+          <Route path="/carro" element={<CarritoCompra />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
