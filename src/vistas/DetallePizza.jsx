@@ -7,7 +7,7 @@ const DetallePizza = () => {
   const { product } = useContext(MyContext);
   const filtro = product.find((item) => item.id === id);
   return (
-    <>
+    <div className="detalle">
       {filtro && (
         <div className="container">
           <div class="cardetalle bg-white">
@@ -43,7 +43,7 @@ const DetallePizza = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
