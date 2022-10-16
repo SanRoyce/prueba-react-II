@@ -22,11 +22,11 @@ function Card({ desc, id, img, ingredients, name, price }) {
         </div>
         <ul className="list-group list-group-flush">
           <h4>Ingredientes:</h4>
-          <th>
+          <ul>
             {ingredients.map((ingredient, i) => (
-              <tr key={i}>🍕 {ingredient}</tr>
+              <li key={i}>🍕 {ingredient}</li>
             ))}
-          </th>
+          </ul>
           <li className="list-group-item text-danger">
             {" "}
            <h4> <strong>${price}</strong></h4>

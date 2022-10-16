@@ -10,21 +10,21 @@ const DetallePizza = () => {
     <div className="detalle">
       {filtro && (
         <div className="container">
-          <div class="cardetalle bg-white">
-            <div class="row g-0">
-              <div class="col-md-4">
+          <div className="cardetalle bg-white">
+            <div className="row g-0">
+              <div className="col-md-4">
                 <img
                   src={filtro.img}
-                  class="img-fluid "
+                  className="img-fluid "
                   alt="..."
                 />
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
+              <div className="col-md-8">
+                <div className="card-body">
                   <h3 className="card-title text-center">
                     <strong>👨‍🍳 {filtro.name}</strong>
                   </h3>
-                  <p class="card-text">{filtro.desc}</p>
+                  <p className="card-text">{filtro.desc}</p>
                   <div className="derecha">
                     <ul>
                     <h4>Ingredientes:</h4>
